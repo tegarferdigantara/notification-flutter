@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:starter/ui/login_page.dart';
+import 'package:flutter_application_3/ui/login_page.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -16,13 +16,12 @@ class _RegisterPageState extends State<RegisterPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/img/logo.png'),
             const SizedBox(
-              height: 40,
+              height: 25,
             ),
             const Text(
-              'REGISTER',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              'Register Page',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
             const SizedBox(
               height: 20,
@@ -117,7 +116,7 @@ class _RegisterPageState extends State<RegisterPage> {
               width: 360,
               height: 42,
               child: ElevatedButton(
-                  child: const Text('SIGN UP'),
+                  child: const Text('Sign Up'),
                   onPressed: () {
                     Navigator.pushNamed(context, '/homePage');
                   },

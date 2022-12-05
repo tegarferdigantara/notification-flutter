@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:starter/ui/register_page.dart';
+import 'package:flutter_application_3/ui/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -16,14 +16,18 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/img/logo.png'),
             const SizedBox(
-              height: 40,
+              height: 25,
             ),
             const Text(
-              'LOGIN',
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
+              'Halo User',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Text('Selamat datang kembali',
+                style: TextStyle(fontSize: 20)),
             const SizedBox(
               height: 20,
             ),
@@ -74,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
               width: 360,
               height: 42,
               child: ElevatedButton(
-                  child: const Text('SIGN IN', style: TextStyle(),),
+                  child: const Text('Sign In'),
                   onPressed: () {
                     Navigator.pushNamed(context, '/homePage');
                   },
@@ -92,8 +96,8 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Not a member ?',
-                  style: TextStyle(fontFamily: 'Roboto',fontWeight: FontWeight.w700),
+                  'Not a member?',
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 GestureDetector(
                   onTap: () {
@@ -105,7 +109,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: Text(
                     ' Register Now!',
                     style: TextStyle(
-                        color: Colors.blue, fontFamily: 'Roboto',fontWeight: FontWeight.w700),
+                        color: Colors.blue, fontWeight: FontWeight.bold),
                   ),
                 )
               ],
